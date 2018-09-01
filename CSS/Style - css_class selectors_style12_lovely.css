@@ -1,0 +1,27 @@
+h1{
+	color: blue;
+	font-size: 50px;
+		text-decoration: line-through; /*underliner底線、中線*/
+
+}
+
+p{
+	font-family: Arial;
+	font-family: verdana;
+	font-size: 16px;
+	line-height: 1.5;  /* 1.5倍行距*/
+	text-align: left; 
+	text-indent: 32px; /*16px*2=32px,縮兩個字*/
+	text-decoration: line-through; /*underliner底線、中線*/
+
+}
+
+
+.style1{
+	color: blue;
+}
+
+.style2{
+	color: pink;
+	font-size: 20px;
+}

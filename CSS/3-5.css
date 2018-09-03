@@ -1,0 +1,32 @@
+.box1{
+	height: 50px;
+	width: 50px;
+	background: pink;
+}
+
+.box2{
+	height: 50px;
+	width: 50px;
+	background: pink;
+	padding-left: 50px;
+}
+/*padding增加BOX寬*/
+
+.box3{
+	height: 50px;
+	width: 50px;
+	background: pink;
+	padding-left: 50px;
+	border: 20px solid red;
+}
+/*border增加BOX寬*/
+
+.box4{
+	height: 50px;
+	width: 50px;
+	background: pink;
+	padding-left: 50px;
+	border: 20px solid red;
+	margin-left: 100px;
+}
+/*margin不增加BOX寬*/

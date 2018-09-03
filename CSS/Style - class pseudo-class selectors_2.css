@@ -71,12 +71,10 @@ table {
 /*KEY：同一屬性，後面蓋前面，
 但Class內的擬態無用，無法顯示粉紅色*/
 
-
 .style2{
 	color: yellow;
 	font-size: 40px;
 }
-
 
 
 p{

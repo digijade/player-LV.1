@@ -1,0 +1,25 @@
+a{
+	display: block;
+	height: 50pt;
+}
+/*a連結預設為inline(同一行並排)，
+block後可點選範圍為最大整版面，
+例如高度50pt內的非文字空白處也可以點*/
+
+p{
+	display: inline;
+}
+
+/*
+ul{
+	display: inline;
+}
+*/
+/*清單用ul無效，ul是小黑點，li才是清單，
+上面語法用ul只會讓小黑點消失*/
+
+
+li{
+	display: inline;
+}
+/*清單預設為block(區塊)，改為同行呈現(=並排)*/

@@ -1,0 +1,5 @@
+Ctrl+Shift+P -->install-->
+
+1.emm
+
+2.colorpicker     Ctrl+Shift+C

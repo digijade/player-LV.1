@@ -1,0 +1,36 @@
+p.style1{
+	color: red;
+}
+
+p.style2{
+	color: blue;
+}
+/*以上錯誤，p就是p，不給.class，
+要的話，設div後，指定不同class*/
+
+/*
+p{
+	color: pink;
+}
+如果加上上述p選擇器，
+則全部p變成pink，幹掉div*/
+
+.style1{
+	color: red;
+}
+
+.style2{
+	color: blue;
+}
+
+.style3 h2 {
+	color: gray;
+}
+
+.style3 h2 span{
+	color: yellow;
+}
+
+.style3 p span{
+	color: #D60CE8;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3-3</title>
+	<link rel="stylesheet" href="CSS/3-3.css">
+
+</head>
+<body>
+
+<!-- 
+	<div>
+			lorem 廢字
+			lorem*10 連div語法一起10組
+	</div>
+-->
+
+	<div class="style1">
+		<h2>標題在div裡也一起被style1</h2>
+		<h3>但還是小於直接上p，p直接改HTML標籤影響全域</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aliquid ea alias, cum adipisci ratione delectus hic! Minus sunt nostrum totam incidunt iure ut excepturi obcaecati repellendus! Natus, dignissimos, modi?
+		</p>
+	</div>
+
+	<div class="style2">
+	<h2>標題在div裡也一起被style2</h2>
+	<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aliquid ea alias, cum adipisci ratione delectus hic! Minus sunt nostrum totam incidunt iure ut excepturi obcaecati repellendus! Natus, dignissimos, modi?
+		</p>
+	</div>
+
+	<div class="style3">
+	<h2>用後代選擇器，影響<span>span</span></h2>
+	<p>
+			Lorem <span>ipsum</span> dolor sit amet, consectetur adipisicing elit. Est aliquid ea alias, cum adipisci ratione delectus hic! Minus sunt nostrum totam incidunt iure ut excepturi obcaecati repellendus! Natus, dignissimos, modi?
+		</p>
+	</div>
+	
+</body>
+</html>

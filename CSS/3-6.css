@@ -1,0 +1,40 @@
+.wrap{
+	width: 300px;
+	/*一要有width，用來控制水平置中；
+	header跟content的寬度是在控制他自己的背景圖寬度*/
+	margin-left: auto;
+	margin-right: auto;
+	
+	/*簡單寫法*/
+	/*
+	margin: 0 auto 0 auto;
+	       /*上0 下auto 左0 右auto*/
+	/*再簡寫(唯一)*/
+	/*margin: 0 auto;
+		   /*上下0 左右auto*/
+}
+/*一次控制haeder與content*/
+
+.header{
+	width: 300px;
+	/*width此時可以省略，因為被父元素wrap控制，
+	又div是滿版(盡可能填滿)，
+	因此不寫width一樣會被wrap控制為300px*/
+	height: 50px;
+	background: black;
+}
+/*color用在文字框線，一塊圖請用background*/
+
+.content{
+	width: 300px;
+	height: 200px;
+	background: orange;
+}
+
+
+.footer{
+	height: 50px;
+	background: green;
+}
+/*footer不在wrap中，沒被控制為300px,
+又因為div，所以滿版*/

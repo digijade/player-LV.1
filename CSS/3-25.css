@@ -1,0 +1,15 @@
+.box{
+	width: 300px;
+	height: 200px;
+	background: orange;
+	box-sizing: border-box;
+	/*原本div會充滿，但box-sizing將寬度強制限定*/
+}
+
+*{/*讓所有HTML標籤都知道這個屬性*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	/*-moz- 叫火狐兼容瀏覽*/
+	-webkit-box-sizing: border-box;
+	/*-webkit- 叫chrome兼容瀏覽*/
+}

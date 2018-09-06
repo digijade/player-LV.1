@@ -15,11 +15,27 @@ a{
 	color: red;
 }
 
+a:hover{
+	color: blue;
+}
+
+
 .line{
 	text-decoration: line-through;
 }
 
+
 .logo{
 	border: 3px solid gray;
 	padding: 20px;
+}
+/*可以不用類別選擇器，直接用下面的：
+img{
+	border: 3px solid gray;
+	padding: 20px;
+}
+*/
+
+img:hover{
+	border-color: pink;
 }

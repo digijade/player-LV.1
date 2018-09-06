@@ -1,0 +1,34 @@
+.wrap{
+	width: 500px;
+	height: 400px;
+	background: pink;
+	float: left;
+	/*沒有用，WHY? 有，用在粉紅色跟紅色*/
+}
+
+.box1{
+	width: 200px;
+	height: 200px;
+	background: orange;
+	float: left; 
+
+}
+
+.box2{
+	width: 200px;
+	height: 200px;
+	background: black;
+	float: left;
+	 /*為何兩個都要設float? 
+	 .box1為何不能省略?
+	 若省略.box1為區塊，不參與float，
+	 且.box2成為float的起始第一塊*/
+}
+
+
+.wrap2{
+	width: 600px;
+	height: 600px;
+	background: red;
+	float: left;
+}

@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------------*/
+
+
+.wrap{
+	margin: 0 auto;
+	width: 1000px;
+	background: pink;
+}
+
+.header{
+	width: 1000px;
+	height: 100px;
+	background: green;
+	margin-bottom: 5px;
+} 
+
+
+
+
+
+.topmenu {
+	/*	float: left;  
+	錯誤，變float整個topmenu */
+
+	/*	clear: both;*/
+	/*中止float法1.錯誤，會把上面的float取消，要在HTML中加*/
+	height: 50px;
+	/*中止float法2.因為沒有高度(wrap沒有，topmenu也沒有)，
+	所以被擠，法2就是直接給清單一個高度*/
+	margin-bottom: 5px;
+	background: yellow;
+	/*字16px，padding 上下10px,所以50-36還有14px*/
+}
+
+
+.topmenu li{/*不是ul*/
+	float: left; /*!!!第一步*/
+
+}
+
+/*.topmenu a{	!!!!!!錯誤，沒有完整的子代選擇路徑*/
+.topmenu li a{
+	color: white;
+	background: blue;
+	text-decoration: none;
+	display: block;
+	width: 100px; /*!!  給予block寬度*/
+	text-align: center;
+/*	line-height: 50px;  /*置中法1，同topmenu高*/
+	padding-top: 10px;    /*置中法2-1*/
+	padding-bottom: 10px; /*置中法2-2*/
+}
+
+.topmenu li a:hover{
+	background: orange;
+}
+/*a{
+	hover
+}!!!!錯誤，啥鬼*/
+
+
+
+
+.main{
+	width: 1000px;
+	margin-bottom: 20px;
+}
+.menu{
+	width: 200px;
+	padding: 10px 10px 10px 10px;
+	background: orange;
+	float: left;
+}
+
+.content{
+	width: 200px;
+	height: 500px; 
+	background: black;
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.footer{
+	width: 1000px;
+	height: 100px;
+	background: blue;
+}

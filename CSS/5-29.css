@@ -1,0 +1,52 @@
+.wrap{
+	width: 500px;
+	height: 450px;
+	background: pink;
+}
+
+.header{
+	width: 500px;
+	height: 100px;
+	background: green;
+	margin-bottom: 20px;
+} /*法1.由header或footer往上下推*/
+
+.main{
+	width: 500px;
+/*	height: 200px;
+由於選單跟內容可能過長，所以通常不設限制*/
+	margin-bottom: 20px;
+}/*法2.新增一個集合main，將.menu跟.content包進去，
+再用main來上下推*/
+
+.menu{
+	width: 200px;
+/*	height: 200px;  
+由於選單內容可能過長，所以通常不設限制*/	
+	padding: 10px 10px 10px 10px;
+	background: orange;
+	float: left; 
+}
+
+.content{
+	width: 200px;
+	height: 500px; 
+	background: black;
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+/*2.在.menu跟.content後面加上clear來中止float，
+成為.menu跟.content結尾，其他div的開頭基準*/
+
+.footer{
+	width: 500px;
+	height: 100px;
+	background: blue;
+}
+/*1..menu跟.content開始浮動，
+並浮動在父元素上，header後，
+.footer沒有浮動，所以智障跟在hearder後面
+*/
